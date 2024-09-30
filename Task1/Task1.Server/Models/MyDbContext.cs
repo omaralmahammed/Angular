@@ -49,7 +49,11 @@ public partial class MyDbContext : DbContext
 
     public virtual DbSet<SubService> SubServices { get; set; }
 
+    public virtual DbSet<Subscription> Subscriptions { get; set; }
+
     public virtual DbSet<User> Users { get; set; }
+
+    public virtual DbSet<UserSubscription> UserSubscriptions { get; set; }
 
     public virtual DbSet<Voucher> Vouchers { get; set; }
 
@@ -371,6 +375,20 @@ public partial class MyDbContext : DbContext
                 .HasConstraintName("FK_Service_SubService");
         });
 
+        modelBuilder.Entity<Subscription>(entity =>
+        {
+            entity.HasKey(e => e.SubscriptionId).HasName("PK__Subscrip__4A0F55C7963DF484");
+
+            entity.ToTable("Subscription");
+
+            entity.Property(e => e.SubscriptionId).HasColumnName("subscriptionID");
+            entity.Property(e => e.SubscriptionAmount).HasColumnName("subscriptionAmount");
+            entity.Property(e => e.SubscriptionDescription).HasColumnName("subscriptionDescription");
+            entity.Property(e => e.SubscriptionName)
+                .HasMaxLength(150)
+                .HasColumnName("subscriptionName");
+        });
+
         modelBuilder.Entity<User>(entity =>
         {
             entity.HasKey(e => e.UserId).HasName("PK__Users__B9BE370F87BE9830");
@@ -397,6 +415,35 @@ public partial class MyDbContext : DbContext
                 .IsUnicode(false)
                 .HasColumnName("phone_number");
             entity.Property(e => e.Points).HasColumnName("points");
+        });
+
+        modelBuilder.Entity<UserSubscription>(entity =>
+        {
+            entity.HasKey(e => e.UserSubscriptionId).HasName("PK__UserSubs__D1FD777CAE136C86");
+
+            entity.ToTable("UserSubscription");
+
+            entity.Property(e => e.EndDate)
+                .HasColumnType("datetime")
+                .HasColumnName("endDate");
+            entity.Property(e => e.ScriptionId).HasColumnName("scriptionID");
+            entity.Property(e => e.StartDate)
+                .HasColumnType("datetime")
+                .HasColumnName("startDate");
+            entity.Property(e => e.SubServiceId).HasColumnName("subServiceID");
+            entity.Property(e => e.UserId).HasColumnName("userId");
+
+            entity.HasOne(d => d.Scription).WithMany(p => p.UserSubscriptions)
+                .HasForeignKey(d => d.ScriptionId)
+                .HasConstraintName("FK__UserSubsc__scrip__339FAB6E");
+
+            entity.HasOne(d => d.SubService).WithMany(p => p.UserSubscriptions)
+                .HasForeignKey(d => d.SubServiceId)
+                .HasConstraintName("FK__UserSubsc__subSe__32AB8735");
+
+            entity.HasOne(d => d.User).WithMany(p => p.UserSubscriptions)
+                .HasForeignKey(d => d.UserId)
+                .HasConstraintName("FK__UserSubsc__userI__31B762FC");
         });
 
         modelBuilder.Entity<Voucher>(entity =>

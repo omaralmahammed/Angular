@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "kQL571xxFZRbWfmJzJRyPxk5IkdEmRbTVTrqtMs0Q9I=",
+  "Hash": "4lwV4VhZzluqG+ts1RJdeBINh7J4gX0WR7keWFWI7BU=",
   "Source": "Task1.Server",
   "BasePath": "_content/Task1.Server",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "C:\\Users\\Orange\\Desktop\\Anguler\\Task1\\task1.client\\task1.client.esproj",
+      "Identity": "C:\\Users\\Orange\\Desktop\\Anguler\\Angular\\Task1\\task1.client\\task1.client.esproj",
       "Version": 2,
       "Source": "task1.client",
       "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",
