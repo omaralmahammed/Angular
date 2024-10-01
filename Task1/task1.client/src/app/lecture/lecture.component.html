@@ -1,8 +1,16 @@
 <h1>lecture works!</h1>
 
-<span>My Number: <span>{{Number1}}</span></span> 
+<span>My Number: <span>{{Number1}}</span></span>
 <br />
-<input type="number" value="{{Number1}}" [(ngModel)]="Number1"/>
+<input type="number" value="{{Number1}}" [(ngModel)]="Number1" />
+
+<br />
+<br />
 
 
+<div [ngSwitch]="role">
+  <p *ngSwitchCase="'admin'">page 1</p>
+  <p *ngSwitchCase="'superAdmin'">page 2</p>
+  <p *ngSwitchCase="'superAdmin'">page 3</p>
+</div>
 

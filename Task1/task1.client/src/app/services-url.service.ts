@@ -32,4 +32,12 @@ export class ServicesURLService {
   AddUserSubscription(data:any): Observable<any> {
     return this.http.post<any>(`${this.baseUrl}/UserSubscription/AddUserSubscription`, data)
   }
+
+  AddUserRegester(data: any): Observable<any> {
+    return this.http.post<any>(`${this.baseUrl}/Users/Register`, data)
+  }
+
+  UserLogin(data: any): Observable<any> {
+    return this.http.post<any>(`${this.baseUrl}/Users/Login`, data)
+  }
 }

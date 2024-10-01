@@ -13,6 +13,8 @@ import { SubServiceComponent } from './sub-service/sub-service.component';
 import { LectureComponent } from './lecture/lecture.component';
 import { SubscriptionComponent } from './subscription/subscription.component';
 import { SubServiceDeatailsComponent } from './sub-service-deatails/sub-service-deatails.component';
+import { RegistrationUserComponent } from './registration-user/registration-user.component';
+import { LoginUserComponent } from './login-user/login-user.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { SubServiceDeatailsComponent } from './sub-service-deatails/sub-service-
     SubServiceComponent,
     LectureComponent,
     SubscriptionComponent,
-    SubServiceDeatailsComponent
+    SubServiceDeatailsComponent,
+    RegistrationUserComponent,
+    LoginUserComponent
   ],
   imports: [
     FormsModule,
@@ -35,7 +39,8 @@ import { SubServiceDeatailsComponent } from './sub-service-deatails/sub-service-
       { path: "subservicedetails/:id", component: SubServiceDeatailsComponent },
       { path: "lecture", component: LectureComponent },
       { path: "subscription/:id", component: SubscriptionComponent },
-
+      { path: "register", component: RegistrationUserComponent },
+      { path: "login", component: LoginUserComponent },
     ]) 
     
   ],

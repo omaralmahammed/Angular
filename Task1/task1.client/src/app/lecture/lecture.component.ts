@@ -9,4 +9,8 @@ export class LectureComponent {
 
   Number1 : number = 10
 
+
+
+  role: string = "superAdmin"
+
 }
