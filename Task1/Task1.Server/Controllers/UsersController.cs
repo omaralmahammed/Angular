@@ -50,9 +50,9 @@ namespace Task1.Server.Controllers
             
                 if (checkUser == null) { 
                     return BadRequest("Email or Password wrong!");
-            }
+                }
 
-            return Ok(checkUser);
+            return Ok(new { email = checkUser.Email });
         }
 
     }

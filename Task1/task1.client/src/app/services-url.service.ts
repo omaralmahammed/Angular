@@ -40,4 +40,7 @@ export class ServicesURLService {
   UserLogin(data: any): Observable<any> {
     return this.http.post<any>(`${this.baseUrl}/Users/Login`, data)
   }
+  AddService(data: any): Observable<any> {
+    return this.http.post<any>(`${this.baseUrl}/Services/AddService`, data)
+  }
 }
