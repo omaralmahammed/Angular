@@ -27,9 +27,8 @@ export class AddServicesComponent {
     }
 
     formdata.append("ServiceImage", this.imageFile)
-    console.log(formdata)
 
-    this._ser.AddService(formdata).subscribe(() => {
+    this._ser.AddService(formdata).subscribe((data) => {
       alert("Service add successfully!")
       this._router.navigate(['/services']);
     }, (error) => {

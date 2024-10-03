@@ -43,4 +43,8 @@ export class ServicesURLService {
   AddService(data: any): Observable<any> {
     return this.http.post<any>(`${this.baseUrl}/Services/AddService`, data)
   }
+
+  UpdateService(id: any, data: any): Observable<any> {
+    return this.http.put<any>(`${this.baseUrl}/Services/UpdateServicesDetails/${id}`, data)
+  }
 }
