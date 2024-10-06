@@ -125,5 +125,23 @@ namespace Task1.Server.Controllers
 
             return Ok();
         }
+
+
+
+        [HttpGet("GetImages/{imageName}")]
+        public IActionResult GetImages(string imageName) {
+
+            var pathImage = Path.Combine(Directory.GetCurrentDirectory(), "UploadsImages", imageName);
+
+
+            if (System.IO.File.Exists(pathImage)) { 
+                
+               
+                return PhysicalFile(pathImage, "image/png");
+            
+            }
+
+            return NotFound();
+        }
     }
 }

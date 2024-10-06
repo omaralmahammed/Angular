@@ -1,5 +1,5 @@
 <div class="card" style="width: 18rem;" *ngFor="let item of arrayOfData">
-  <img class="card-img-top" src="{{item.serviceImage}}" alt="Card image cap">
+  <img class="card-img-top" src="https://localhost:7107/api/Services/GetImages/{{item.serviceImage}}" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">{{item.serviceName}}</h5>
     <p class="card-text">{{item.serviceDescription}}</p>

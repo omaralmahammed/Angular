@@ -19,6 +19,7 @@ import { AddServicesComponent } from './add-services/add-services.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ServicesAdminComponent } from './dashboard/services-admin/services-admin.component';
 import { UpdateServiceComponent } from './dashboard/update-service/update-service.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { UpdateServiceComponent } from './dashboard/update-service/update-servic
     AddServicesComponent,
     DashboardComponent,
     ServicesAdminComponent,
-    UpdateServiceComponent
+    UpdateServiceComponent,
+    FooterComponent
   ],
   imports: [
     FormsModule,

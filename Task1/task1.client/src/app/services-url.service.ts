@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, ObservableInput } from 'rxjs';
+import { BehaviorSubject, Observable, ObservableInput } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -8,6 +8,10 @@ import { Observable, ObservableInput } from 'rxjs';
 export class ServicesURLService {
 
   constructor(private http: HttpClient) { }
+
+  email: BehaviorSubject<string> = new BehaviorSubject<string>("null");
+  emailaddress = this.email.asObservable();
+
 
 
   baseUrl = "https://localhost:7107/api"

@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Orange\\Desktop\\Anguler\\Angular\\Task1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6D4A01EF-FA8E-45F5-A3A8-F1F22AE51D04}|task1.client\\task1.client.esproj|c:\\users\\orange\\desktop\\anguler\\angular\\task1\\task1.client\\src\\app\\dashboard\\update-service\\update-service.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{6D4A01EF-FA8E-45F5-A3A8-F1F22AE51D04}|task1.client\\task1.client.esproj|solutionrelative:task1.client\\src\\app\\dashboard\\update-service\\update-service.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D4A01EF-FA8E-45F5-A3A8-F1F22AE51D04}|task1.client\\task1.client.esproj|c:\\users\\orange\\desktop\\anguler\\angular\\task1\\task1.client\\src\\app\\dashboard\\update-service\\update-service.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6D4A01EF-FA8E-45F5-A3A8-F1F22AE51D04}|task1.client\\task1.client.esproj|solutionrelative:task1.client\\src\\app\\dashboard\\update-service\\update-service.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{6D4A01EF-FA8E-45F5-A3A8-F1F22AE51D04}|task1.client\\task1.client.esproj|c:\\users\\orange\\desktop\\anguler\\angular\\task1\\task1.client\\src\\app\\nav-bar\\nav-bar.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{6D4A01EF-FA8E-45F5-A3A8-F1F22AE51D04}|task1.client\\task1.client.esproj|solutionrelative:task1.client\\src\\app\\nav-bar\\nav-bar.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,27 +23,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "update-service.component.ts",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Anguler\\Angular\\Task1\\task1.client\\src\\app\\dashboard\\update-service\\update-service.component.ts",
-              "RelativeDocumentMoniker": "task1.client\\src\\app\\dashboard\\update-service\\update-service.component.ts",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\Anguler\\Angular\\Task1\\task1.client\\src\\app\\dashboard\\update-service\\update-service.component.ts",
-              "RelativeToolTip": "task1.client\\src\\app\\dashboard\\update-service\\update-service.component.ts",
-              "ViewState": "AQIAABEAAAAAAAAAAAAAwCgAAAAdAAAA",
+              "Title": "nav-bar.component.ts",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Anguler\\Angular\\Task1\\task1.client\\src\\app\\nav-bar\\nav-bar.component.ts",
+              "RelativeDocumentMoniker": "task1.client\\src\\app\\nav-bar\\nav-bar.component.ts",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\Anguler\\Angular\\Task1\\task1.client\\src\\app\\nav-bar\\nav-bar.component.ts",
+              "RelativeToolTip": "task1.client\\src\\app\\nav-bar\\nav-bar.component.ts",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-10-03T10:18:03.577Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "update-service.component.html",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Anguler\\Angular\\Task1\\task1.client\\src\\app\\dashboard\\update-service\\update-service.component.html",
-              "RelativeDocumentMoniker": "task1.client\\src\\app\\dashboard\\update-service\\update-service.component.html",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\Anguler\\Angular\\Task1\\task1.client\\src\\app\\dashboard\\update-service\\update-service.component.html",
-              "RelativeToolTip": "task1.client\\src\\app\\dashboard\\update-service\\update-service.component.html",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAABDAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-10-03T10:15:53.276Z",
+              "WhenOpened": "2024-10-06T13:04:55.468Z",
               "EditorCaption": ""
             }
           ]

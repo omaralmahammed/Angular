@@ -14,3 +14,23 @@
   <p *ngSwitchCase="'superAdmin'">page 3</p>
 </div>
 
+
+<div>
+  <span>currency:  </span>
+  <span>{{50 | currency:'CAD':'symbol'}}</span>
+</div>
+
+<div>
+  <span>Date: </span>
+  <span>{{dateToday | date : 'longDate'}}</span>
+</div>
+
+<div>
+  <span>Slice:  </span>
+  <span>{{items |  slice:0:3 }}</span>
+</div>
+
+<br /><br /><br />
+<div>
+  <p>{{nameVal}}</p>
+</div>
